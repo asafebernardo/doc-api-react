@@ -10,12 +10,6 @@ const Fundo = styled.div`
     grid-area: superior;
 `;
 
-const Titulo = styled.h1`
-    color: white;
-    margin: 0;
-    text-align: center;
-`;
-
 const Endpoint = styled.h2`
     color: rgb(102, 102, 102);
     margin: 0;
@@ -39,7 +33,6 @@ function BarraSuperior() {
     return (
         <Fundo>
             <Endpoint>Cliente</Endpoint>
-            <Titulo>Documentação API</Titulo>
             <Buscador type="text" placeholder="Buscar..." />
         </Fundo>
     );

@@ -8,6 +8,7 @@ const Fundo = styled.div`
     border-radius: 50px 50px 50px 50px;
     margin-left: 15px;
     margin-top: 30px;
+    border: solid #242734 3px;
 `;
 
 const SectionTitulo = styled.div`

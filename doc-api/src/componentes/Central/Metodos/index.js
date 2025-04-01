@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Tabs from "./metodos"
 
 const Fundo = styled.div`
     width: 95%;
@@ -7,27 +8,29 @@ const Fundo = styled.div`
     border-radius: 50px 50px 50px 50px;
     margin-left: 25px;
     margin-top: 30px;
+    border: solid #242734 3px;
 `
-const GET = styled.button`
-    background-color:rgb(255, 255, 255);
+const Section = styled.div`
+width: 96%;
+height: 95%;
+margin-left: 20px;
+justify-content: center;
+align-items: center;
+
 `
-const POST = styled.button`
-    background-color:rgb(255, 255, 255);
-`
-const PUT = styled.button`
-    background-color:rgb(255, 255, 255);
-`
-const DELETE = styled.button`
-    background-color:rgb(255, 255, 255);
+const Titulo = styled.h1`
+margin-top: 30px;
+margin-left: 10px;
+color:rgb(255, 255, 255);
 `
 
 function Metodos(){
     return (
     <Fundo>
-        <GET/>
-        <POST/>
-        <PUT/>
-        <DELETE/>
+        <Section>
+            <Titulo>Métodos</Titulo>
+            <Tabs></Tabs>
+        </Section>
     </Fundo>
     )
 }
