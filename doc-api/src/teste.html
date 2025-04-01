@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação API</title>
+  <link rel="stylesheet" href="/css/left-side.css">
+  <link rel="stylesheet" href="/css/right-top.css">
+  <link rel="stylesheet" href="/css/right-campos.css">
+  <link rel="stylesheet" href="/css/right-metodos.css">
+  <link rel="icon" href="/img/icon-ixc.png" type="image/x-icon">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <!--style="background-image: url('ixc-menu.png'); background-size: cover; background-position: center center; opacity: 90%;"-->
+<div class="container">
+    <!-- Lateral esquerda -->
+    <aside class="left">
+
+      <!-- Logo do IXC Provedor -->
+      <img src="/img/ixc-logo.png" class="ixc-logo">
+
+      <div class="left-abas">
+        <!-- Abas -->  
+        <button class="aba active" onclick="openTab('tab1')">🖥️</button>
+        <button class="aba" onclick="openTab('tab2')">📑</button>
+        <button class="aba" onclick="openTab('tab3')">⚙️</button>
+        <button class="aba" onclick="openTab('tab4')">🗂️</button>
+          
+        <!-- Conteúdo das Abas -->
+        <div id="tab1" class="aba-container active">
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('cadastros')">
+            <a class="txt_externo">Cadastros</a>
+          </button>
+        
+          <!-- Conteúdo expansível -->
+          <div id="cadastros" class="expandable-content"> 
+            <button class="btn_interno"><p class="txt_interno">Clientes</p></button>
+            <button class="btn_interno"><p class="txt_interno">Contratos</p></button>
+            <button class="btn_interno"><p class="txt_interno">Produtos</p></button>
+            <button class="btn_interno"><p class="txt_interno">Fornecedor</p></button>
+            <button class="btn_interno"><p class="txt_interno">Estruturas</p></button>
+            
+            <button class="btn_interno"><p class="txt_interno_folder">Clientes</p></button>
+            <button class="btn_interno"><p class="txt_interno_folder">Contratos</p></button>
+            <button class="btn_interno"><p class="txt_interno_folder">Produtos</p></button>
+            <button class="btn_interno"><p class="txt_interno_folder">Fornecedores</p></button>
+            <button class="btn_interno"><p class="txt_interno_folder">Financeiro</p></button>
+            <button class="btn_interno"><p class="txt_interno_folder">Tabela de preços</p></button>
+            <button class="btn_interno"><p class="txt_interno_folder">Locais</p></button>
+            <button class="btn_interno"><p class="txt_interno_folder">TV/SVA</p></button>
+          </div>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('planejamento')">
+            <a class="txt_externo">Planejamento</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('entradas')">
+            <a class="txt_externo">Entradas</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('saidas')">
+            <a class="txt_externo">Saídas</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('pagar')">
+            <a class="txt_externo">Pagar</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('receber')">
+            <a class="txt_externo">Receber</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('financeiro')">
+            <a class="txt_externo">Financeiro</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('fiscal')">
+            <a class="txt_externo">Fiscal</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('contabilidade')">
+            <a class="txt_externo">Contabilidade</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('folha')">
+            <a class="txt_externo">Folha de pagamento</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('estoque')">
+            <a class="txt_externo">Estoque</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('provedor')">
+            <a class="txt_externo">Provedor</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('hub')">
+            <a class="txt_externo">IXC Hub</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('inmap')">
+            <a class="txt_externo">InMap</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('suporte')">
+            <a class="txt_externo">Suporte</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('hotsite')">
+            <a class="txt_externo">Hotsite</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('crm')">
+            <a class="txt_externo">CRM</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('frota')">
+            <a class="txt_externo">Frota</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('voip')">
+            <a class="txt_externo">Plataforma Voip</a>
+          </button>
+
+          <!-- Botão para expandir ou ocultar -->
+          <button class="expandable-button" onclick="toggleExpandable('mvno')">
+            <a class="txt_externo">MVNO/Telefonia móvel</a>
+          </button>
+
+          <div class="fundo"></div>
+        </div>
+
+        <div id="tab2" class="aba-container">
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios suporte</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios de cadastros</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios de entradas</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios de saídas</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios financeiros</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios gerenciais</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios de folha de pagamento</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios de estoque</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios provedor</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios fiscais</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios de ordem de serviço</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios de contratos</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios de contas a receber</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Relatórios de saídas fiscais</a>
+          </button>
+
+          <div class="fundo"></div>
+        </div>
+
+        <div id="tab3" class="aba-container">
+          <button class="expandable-button">
+            <a class="txt_externo">Empresa</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Rotinas</a>
+          </button>
+          
+          <button class="expandable-button">
+            <a class="txt_externo">Rotinas provedor</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Rotinas financeiro</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Rotinas fiscais</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Usuários</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Parâmetros</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Processos</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Configurações documentos</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Integrações</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Logs</a>
+          </button>
+          <div class="fundo"></div>
+        </div>
+
+        <div id="tab4" class="aba-container">
+          <button class="expandable-button">
+            <a class="txt_externo">Recursos internos e botões</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Fluxos e processos</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Erros retornados da API</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Consultas avançadas com gridparam</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Token e URL</a>
+          </button>
+
+          <button class="expandable-button">
+            <a class="txt_externo">Liberação de IP</a>
+          </button>
+
+          <div class="fundo"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Lateral direita -->
+    <div class="right">
+        
+      <div class="right-top">
+        <p class="doc-api">Documentação API</p>
+
+        <button class="aba_cliente">Cliente</button>
+        <button class="aba_cliente">Arquivo</button>
+      </div>
+
+      <div class="right-bottom">
+        <div class="right-campos">
+          <button class="exp_cliente">id</button>
+          <button class="exp_cliente">razao</button>
+          <button class="exp_cliente">cpf_cnpj</button>
+          <button class="exp_cliente">cidade</button>
+        </div>
+
+        <div class="right-metodos">
+          <button class="mtd_cliente">GET</button>
+          <button class="mtd_cliente">POST</button>
+          <button class="mtd_cliente">PATCH</button>
+          <button class="mtd_cliente">PUT</button>
+          <button class="mtd_cliente">DELETE</button>
+
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
